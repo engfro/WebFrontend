@@ -1,0 +1,21 @@
+{
+  //"iisSettings": {
+  //  "windowsAuthentication": true,
+  //  "anonymousAuthentication": false,
+  //  "iisExpress": {
+  //    "applicationUrl": "http://localhost:5000",
+  //    "sslPort": 0
+  //  }
+  //},
+  "profiles": {
+    //"IIS Express": {
+    //  "commandName": "IISExpress",
+    //  "launchBrowser": true
+    //},
+    "WebFrontend": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}
