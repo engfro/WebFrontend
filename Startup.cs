@@ -102,6 +102,11 @@ namespace WebFrontend
         {
             IHostBuilder hostBuilder = Host.CreateDefaultBuilder(args);
 
+            //Workaround for windows service
+            var isWindowsService = Microsoft.Extensions.Hosting.WindowsServices.WindowsServiceHelpers.IsWindowsService();
+            if (isWindowsService)
+                hostBuilder.UseContentRoot(AppContext.BaseDirectory);
+
             hostBuilder.ConfigureWebHostDefaults(webBuilder =>
             {
                 webBuilder
